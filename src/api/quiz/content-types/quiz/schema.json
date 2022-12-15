@@ -4,7 +4,8 @@
   "info": {
     "singularName": "quiz",
     "pluralName": "quizzes",
-    "displayName": "quiz"
+    "displayName": "quiz",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,10 +13,14 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "maxLength": 25,
+      "minLength": 3
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }
