@@ -35,6 +35,12 @@
     "answer": {
       "type": "string",
       "required": true
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quiz.quiz",
+      "mappedBy": "questions"
     }
   }
 }

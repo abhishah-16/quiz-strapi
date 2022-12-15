@@ -21,6 +21,12 @@
     "description": {
       "type": "text",
       "required": true
+    },
+    "questions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::question.question",
+      "inversedBy": "quizzes"
     }
   }
 }
