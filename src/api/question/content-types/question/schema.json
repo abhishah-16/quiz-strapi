@@ -4,7 +4,8 @@
   "info": {
     "singularName": "question",
     "pluralName": "questions",
-    "displayName": "question"
+    "displayName": "question",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,22 +13,28 @@
   "pluginOptions": {},
   "attributes": {
     "text": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "a": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "b": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "c": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "d": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "answer": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
