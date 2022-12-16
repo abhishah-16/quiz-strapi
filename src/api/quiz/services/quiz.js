@@ -21,6 +21,7 @@ module.exports = createCoreService('api::quiz.quiz', ({ strapi }) => ({
             userAnswers.map((ua) => {
                 question = quiz.questions.find((q) => q.id === ua.questionId)
                 if (question) {
+                    
                     if (question.answer === ua.value) {
                         ua.correct = true;
                         score += 1;
